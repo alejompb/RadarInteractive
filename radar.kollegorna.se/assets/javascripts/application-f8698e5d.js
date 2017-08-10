@@ -5556,12 +5556,12 @@ function() {
             $(this).addClass($(this).attr("data-status"));
             var a = $(this).attr("data-quadrant");
             "language" === a
-              ? i = 40 * i
+              ? i = 45 * i
               : "platform" === a
-                ? i = 40 + 40 * i
+                ? i = 45 + 45 * i
                 : "technique" === a
-                  ? i = 80 + 40 * i
-                  : "tool" === a && (i = 120 + 40 * i),
+                  ? i = 90 + 45 * i
+                  : "tool" === a && (i = 135 + 45 * i),
             i = i * Math.PI / 180;
             var u = n + r * Math.cos(i),
               l = n + r * Math.sin(i);
@@ -5603,12 +5603,12 @@ function() {
               $(this).addClass($(this).attr("data-status"));
               var t = $(this).attr("data-quadrant");
               "language" === t
-                ? i = 40 * i
+                ? i = 45 * i
                 : "platform" === t
-                  ? i = 40 + 40 * i
+                  ? i = 45 + 45 * i
                   : "technique" === t
-                    ? i = 80 + 40 * i
-                    : "tool" === t && (i = 120 + 40 * i),
+                    ? i = 90 + 45 * i
+                    : "tool" === t && (i = 135 + 45 * i),
               i = i * Math.PI / 180,
               e % c == 0
                 ? (f = d, p += s)
