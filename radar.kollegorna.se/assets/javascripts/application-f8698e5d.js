@@ -5555,13 +5555,15 @@ function() {
             $(this).addClass($(this).attr("data-ring")),
             $(this).addClass($(this).attr("data-status"));
             var a = $(this).attr("data-quadrant");
-            "language" === a
+            "adserver" === a
               ? i = 45 * i
               : "platform" === a
                 ? i = 45 + 45 * i
                 : "technique" === a
                   ? i = 90 + 45 * i
-                  : "tool" === a && (i = 135 + 45 * i),
+                    : "tool" === a
+                      ? i = 135 + 45 * i
+                        : "email" === a && (i = 315 + 45 * i),
             i = i * Math.PI / 180;
             var u = n + r * Math.cos(i),
               l = n + r * Math.sin(i);
@@ -5602,13 +5604,15 @@ function() {
               $(this).addClass($(this).attr("data-ring")),
               $(this).addClass($(this).attr("data-status"));
               var t = $(this).attr("data-quadrant");
-              "language" === t
+              "adserver" === t
                 ? i = 45 * i
                 : "platform" === t
                   ? i = 45 + 45 * i
-                  : "technique" === t
-                    ? i = 90 + 45 * i
-                    : "tool" === t && (i = 135 + 45 * i),
+                    : "technique" === a
+                      ? i = 90 + 45 * i
+                        : "tool" === a
+                          ? i = 135 + 45 * i
+                            : "email" === a && (i = 315 + 45 * i),
               i = i * Math.PI / 180,
               e % c == 0
                 ? (f = d, p += s)
@@ -5701,17 +5705,20 @@ function() {
           n = e.attr("data-quadrant"),
           r = e.attr("data-ring");
         switch ($(".caption h4").html(t), $(".caption .quadrant").attr("class", "").addClass("quadrant " + n), $(".caption .ring").html(r), n) {
-          case "language":
-            $(".caption .quadrant").html("Languages & Frameworks");
+          case "adserver":
+            $(".caption .quadrant").html("Adserver");
             break;
           case "platform":
-            $(".caption .quadrant").html("Platforms");
+            $(".caption .quadrant").html("Testing");
             break;
           case "technique":
-            $(".caption .quadrant").html("Techniques");
+            $(".caption .quadrant").html("DSP");
             break;
           case "tool":
-            $(".caption .quadrant").html("Tools");
+            $(".caption .quadrant").html("DMP");
+            break;
+          case "email":
+            $(".caption .quadrant").html("Email");
             break;
           default:
             $(".caption .quadrant").html("")
@@ -5729,16 +5736,19 @@ function() {
           u = e.attr("data-status");
         switch ($(".overlay").find("h1").html(t), $(".overlay").find(".description").html(n), $(".overlay").find(".link").html(i).attr("href", o), $(".overlay").find(".ring").html(s), $(".overlay .quadrant").attr("class", "").addClass("quadrant " + a), a) {
           case "language":
-            $(".overlay .quadrant").html("Languages & Frameworks");
+            $(".overlay .quadrant").html("Adserver");
             break;
           case "platform":
-            $(".overlay .quadrant").html("Platforms");
+            $(".overlay .quadrant").html("Testing");
             break;
           case "technique":
-            $(".overlay .quadrant").html("Techniques");
+            $(".overlay .quadrant").html("DSP");
             break;
           case "tool":
-            $(".overlay .quadrant").html("Tools");
+            $(".overlay .quadrant").html("DMP");
+            break;
+          case "email":
+            $(".overlay .quadrant").html("email");
             break;
           default:
             $(".overlay .quadrant").html("")

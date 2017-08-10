@@ -728,7 +728,16 @@ a.underlined {
 a.underlined:hover {
   color: #00C66B
 }
-
+.logoaccenture {
+  transform: rotate(45deg);
+  max-width: 15%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: auto;
+  right: 70%;
+  margin: 560px;
+}
 .t-center {
   text-align: center
 }
@@ -1424,7 +1433,9 @@ body.detail .header {
   border-radius: 4px;
   margin-right: 6px
 }
-
+.footer__labels ul li.email:before {
+  background: #F8E71C
+}
 .footer__labels ul li.techniques:before {
   background: #5CD7F0
 }
@@ -1437,7 +1448,7 @@ body.detail .header {
   background: #FD812D
 }
 
-.footer__labels ul li.languages:before {
+.footer__labels ul li.adserver:before {
   background: #EE6055
 }
 
@@ -2419,13 +2430,22 @@ body.intro .radar__chart {
   animation-name: glow-orange
 }
 
-.blip.language:after {
+.blip.adserver:after {
   background: #EE6055
 }
 
-.blip.language:hover:after {
+.blip.adserver:hover:after {
   -webkit-animation-name: glow-red;
   animation-name: glow-red
+}
+
+.blip.email:after {
+  background: #F8E71C
+}
+
+.blip.email:hover:after {
+  -webkit-animation-name: glow-yellow;
+  animation-name: glow-yellow
 }
 
 .blip.new:after {
@@ -2552,12 +2572,20 @@ body.detail .blip:after {
   background: #FD812D
 }
 
-.caption p.language {
+.caption p.adserver {
   color: #EE6055
 }
 
-.caption p.language:before {
+.caption p.adserver:before {
   background: #EE6055
+}
+
+.caption p.email {
+  color: #F8E71C
+}
+
+.caption p.email:before {
+  background: #F8E71C
 }
 
 .caption p.author {
@@ -3016,12 +3044,20 @@ body.detail .caption h4, body.detail .caption p {
   background: #FD812D
 }
 
-.overlay__blip__details .right p.language {
+.overlay__blip__details .right p.adserver {
   color: #EE6055
 }
 
-.overlay__blip__details .right p.language:before {
+.overlay__blip__details .right p.adserver:before {
   background: #EE6055
+}
+
+.overlay__blip__details .right p.email {
+  color: #F8E71C
+}
+
+.overlay__blip__details .right p.email:before {
+  background: #F8E71C
 }
 
 body.detail .overlay {
