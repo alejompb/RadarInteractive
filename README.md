@@ -1,2 +1,0 @@
-# RadarInteractive
-RADAR TECH 
