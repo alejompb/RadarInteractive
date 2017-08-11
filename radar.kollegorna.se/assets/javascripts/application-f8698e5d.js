@@ -5563,7 +5563,13 @@ function() {
                   ? i = 90 + 45 * i
                     : "tool" === a
                       ? i = 135 + 45 * i
-                        : "email" === a && (i = 315 + 45 * i),
+                        : "datav" === a
+                          ? i = 180 + 45 * i
+                            : "seo" === a
+                              ? i = 225 + 45 * i
+                                : "viewability" === a
+                                  ? i = 270 + 45 * i
+                                    : "email" === a && (i = 315 + 45 * i),
             i = i * Math.PI / 180;
             var u = n + r * Math.cos(i),
               l = n + r * Math.sin(i);
@@ -5612,7 +5618,13 @@ function() {
                       ? i = 90 + 45 * i
                         : "tool" === a
                           ? i = 135 + 45 * i
-                            : "email" === a && (i = 315 + 45 * i),
+                            : "datav" === a
+                              ? i = 180 + 45 * i
+                                : "seo" === a
+                                  ? i = 225 + 45 * i
+                                    : "viewability" === a
+                                      ? i = 270 + 45 * i
+                                       : "email" === a && (i = 315 + 45 * i),
               i = i * Math.PI / 180,
               e % c == 0
                 ? (f = d, p += s)
@@ -5717,6 +5729,15 @@ function() {
           case "tool":
             $(".caption .quadrant").html("DMP");
             break;
+          case "datav":
+            $(".caption .quadrant").html("Data Visualization");
+            break;
+          case "seo":
+            $(".caption .quadrant").html("SEO");
+            break;
+          case "viewability":
+            $(".caption .quadrant").html("Viewability");
+            break;
           case "email":
             $(".caption .quadrant").html("Email");
             break;
@@ -5746,6 +5767,15 @@ function() {
             break;
           case "tool":
             $(".overlay .quadrant").html("DMP");
+            break;
+          case "datav":
+            $(".overlay .quadrant").html("Data Visualization");
+            break;
+          case "seo":
+            $(".overlay .quadrant").html("SEO");
+            break;
+          case "viewability":
+            $(".overlay .quadrant").html("Viewability");
             break;
           case "email":
             $(".overlay .quadrant").html("email");

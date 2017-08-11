@@ -1433,9 +1433,22 @@ body.detail .header {
   border-radius: 4px;
   margin-right: 6px
 }
+
+.footer__labels ul li.datav:before {
+  background: #FFFFFF
+}
+.footer__labels ul li.seo:before {
+  background: #FF00FF
+}
+
+.footer__labels ul li.viewability:before {
+  background: #7E7E7E
+}
+
 .footer__labels ul li.email:before {
   background: #F8E71C
 }
+
 .footer__labels ul li.techniques:before {
   background: #5CD7F0
 }
@@ -2439,14 +2452,36 @@ body.intro .radar__chart {
   animation-name: glow-red
 }
 
+.blip.seo:after {
+  background: #FF00FF
+}
+.blip.seo:hover:after {
+  -webkit-animation-name: glow-red;
+  animation-name: glow-red
+}
+.blip.viewability:after {
+  background: #7E7E7E
+}
+.blip.viewability:hover:after {
+  -webkit-animation-name: glow-white;
+  animation-name: glow-white
+}
+
 .blip.email:after {
   background: #F8E71C
 }
-
+.blip.datav:after {
+  background: #FFFFFF
+}
 .blip.email:hover:after {
   -webkit-animation-name: glow-yellow;
   animation-name: glow-yellow
 }
+.blip.datav:hover:after {
+  -webkit-animation-name: glow-white;
+  animation-name: glow-white
+}
+
 
 .blip.new:after {
   width: 12px;
@@ -2579,13 +2614,33 @@ body.detail .blip:after {
 .caption p.adserver:before {
   background: #EE6055
 }
+.caption p.seo {
+  color: #FF00FF
+}
 
+.caption p.seo:before {
+  background: #FF00FF
+}
+.caption p.viewability {
+  color: #7E7E7E
+}
+
+.caption p.viewability:before {
+  background: #7E7E7E
+}
 .caption p.email {
   color: #F8E71C
 }
 
 .caption p.email:before {
   background: #F8E71C
+}
+.caption p.datav {
+  color: #FFFFFF
+}
+
+.caption p.datav:before {
+  background: #FFFFFF
 }
 
 .caption p.author {
@@ -3052,12 +3107,36 @@ body.detail .caption h4, body.detail .caption p {
   background: #EE6055
 }
 
+.overlay__blip__details .right p.seo {
+  color: #FF00FF
+}
+
+.overlay__blip__details .right p.seo:before {
+  background: #FF00FF
+}
+
+.overlay__blip__details .right p.viewability {
+  color: #7E7E7E
+}
+
+.overlay__blip__details .right p.viewability:before {
+  background: #7E7E7E
+}
 .overlay__blip__details .right p.email {
   color: #F8E71C
 }
 
 .overlay__blip__details .right p.email:before {
   background: #F8E71C
+}
+
+
+.overlay__blip__details .right p.datav {
+  color: #FFFFFF
+}
+
+.overlay__blip__details .right p.datav:before {
+  background: #FFFFFF
 }
 
 body.detail .overlay {
