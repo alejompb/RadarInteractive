@@ -3357,11 +3357,7 @@ body.detail .overlay__blip__details .right {
   display: none
 }
 
-body.pre-intro .prelude__logo {
-  opacity: 0;
-  -webkit-transform: translate(-10px, 0);
-  transform: translate(-10px, 0)
-}
+
 
 body.pre-intro .prelude__text h1, body.pre-intro .prelude__text p, body.pre-intro .prelude__text .action {
   opacity: 0;
