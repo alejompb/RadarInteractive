@@ -729,9 +729,9 @@ a.underlined:hover {
   color: #00C66B
 }
 .logoaccenture {
-  transform: rotate(45deg);
+
 /*  max-width: 15%; */
-  position: absolute;
+/*  position: absolute;*/
 /*  top: 0%;
   left: 0%;
   bottom: auto;
@@ -1576,15 +1576,47 @@ body.detail .footer {
   animation-delay: 0.1s
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+  from {-webkit-transform: scale(1)}
+  to {-webkit-transform: scale(6)}
+}
+
+@keyframes mymove1 {
+    from {-webkit-transform: scale(1)}
+    to {-webkit-transform: scale(6)}
+}
+
+
+@-webkit-keyframes mymove2 {
+  from {-webkit-transform: scale(6)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes mymove2 {
+    from {-webkit-transform: scale(6)}
+    to {-webkit-transform: scale(1)}
+}
+
  .logoaccenture {
    visibility: hidden;
+
  }
 
  .logoaccenture2 {
    visibility: visible;
+   -webkit-animation: mymove1 5s; /* Safari 4.0 - 8.0 */
+   -webkit-animation-delay: mymove1 2s; /* Safari 4.0 - 8.0 */
+   animation: mymove1 5s;
+   animation-delay: mymove1 2s;
 
+   -webkit-animation: mymove2 5s; /* Safari 4.0 - 8.0 */
+   -webkit-animation-delay: mymove2 2s; /* Safari 4.0 - 8.0 */
+   animation: mymove2 5s;
+   animation-delay: mymove2 2s;
 
  }
+
 
  .logo
 
