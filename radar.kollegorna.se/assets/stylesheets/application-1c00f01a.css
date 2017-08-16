@@ -501,6 +501,7 @@ figure {
   font-size: 1.11111rem;
   margin: 0 0 1.11111rem;
   overflow: visible
+}
 
 figure img {
   float: left
@@ -729,13 +730,13 @@ a.underlined:hover {
 }
 .logoaccenture {
   transform: rotate(45deg);
-  max-width: 15%;
+/*  max-width: 15%; */
   position: absolute;
-  top: 0%;
+/*  top: 0%;
   left: 0%;
   bottom: auto;
   right: 70%;
-  margin: 560px;
+  margin: 560px;*/
 }
 .t-center {
   text-align: center
@@ -1029,12 +1030,12 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background: #0b3b24;
+  background: #1F2041;
   color: #f5f5f5;
-  background: -webkit-linear-gradient(-45deg, #1b1b37 0%, #0b3b24 100%);
-  background: -webkit-linear-gradient(315deg, #1b1b37 0%, #0b3b24 100%);
-  background: linear-gradient(135deg, #1b1b37 0%, #0b3b24 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b37', endColorstr='#0b3b24', GradientType=1)
+  background: -webkit-linear-gradient(-45deg, #1b1b37 0%, #1f2041 100%);
+  background: -webkit-linear-gradient(315deg, #1b1b37 0%, #1f2041 100%);
+  background: linear-gradient(135deg, #1b1b37 0%, #1f2041 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1b37', endColorstr='#1f2041', GradientType=1)
 }
 
 @-webkit-keyframes ping {
@@ -1509,7 +1510,7 @@ body.detail .header {
 
 .footer__links ul li.help a:hover {
   background: #968cbe;
-  color: #0b3b24
+  color: #1F2041
 }
 
 .footer__links a {
@@ -1816,8 +1817,8 @@ body.detail .footer {
 }
 
 .radar__chart__assess h3 {
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s
 }
 
 .radar__chart__hold {
@@ -1841,8 +1842,8 @@ body.detail .footer {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s
 }
 
 .radar__chart .horizontal2 {
@@ -1857,8 +1858,8 @@ body.detail .footer {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s
 }
 
 .radar__chart .horizontal3 {
@@ -1873,8 +1874,8 @@ body.detail .footer {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s
 }
 
 .radar__chart .vertical {
@@ -1974,7 +1975,6 @@ body.detail .footer {
 .radar.scene-finale section h3, .radar.scene-finale section svg circle, .radar.scene-finale .radar__chart, .radar.scene-finale .horizontal, .radar.scene-finale .vertical {
   -webkit-transition: 0s;
   transition: 0s
-
 }
 
 body.pre-intro .radar__chart {
@@ -2875,7 +2875,7 @@ body.detail .caption h4, body.detail .caption p {
   -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
   position: relative;
-  background: #0b3b24;
+  background: #1F2041;
   border: 1px solid #4B3F72;
   border-radius: 12px;
   padding: 20px 30px 25px 30px
@@ -3357,11 +3357,7 @@ body.detail .overlay__blip__details .right {
   display: none
 }
 
-body.pre-intro .prelude__logo {
-  opacity: 0;
-  -webkit-transform: translate(-10px, 0);
-  transform: translate(-10px, 0)
-} 
+
 
 body.pre-intro .prelude__text h1, body.pre-intro .prelude__text p, body.pre-intro .prelude__text .action {
   opacity: 0;
@@ -3407,7 +3403,7 @@ body.intro .prelude {
   height: 400px;
   top: 50%;
   left: 50%;
-  background: #0b3b24;
+  background: #1F2041;
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

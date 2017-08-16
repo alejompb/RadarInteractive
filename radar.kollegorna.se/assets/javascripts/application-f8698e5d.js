@@ -5512,7 +5512,8 @@ function() {
           n.sceneThree()
         }, 5e3),
         setTimeout(function() {
-          n.sceneFour()
+          n.sceneFour(),
+          n.logoaccenture()
         }, 6500),
         setTimeout(function() {
           n.positionBlips(!1),
