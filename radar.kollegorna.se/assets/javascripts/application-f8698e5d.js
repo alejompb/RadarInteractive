@@ -5493,7 +5493,7 @@ function() {
             : $(".tutorial").addClass("longtap")
           : $(".tutorial").addClass("laptop"),
         t
-          ? ($("body").removeClass("pre-intro"), $(".radar").addClass("scene-one scene-two scene-three scene-four"), n.positionBlips(!1), n.sceneFinale(), n.addBinders())
+          ? ($("body").removeClass("pre-intro"), $(".radar").addClass("scene-one scene-two scene-three scene-four logoaccenture2"), n.positionBlips(!1), n.sceneFinale(), n.addBinders())
           : (setTimeout(function() {
             $("body").removeClass("pre-intro").addClass("intro")
           }, 10), $(".prelude a").click(function() {
@@ -5512,12 +5512,12 @@ function() {
           n.sceneThree()
         }, 5e3),
         setTimeout(function() {
-          n.sceneFour(),
-          n.logoaccenture()
+          n.sceneFour()
         }, 6500),
         setTimeout(function() {
           n.positionBlips(!1),
           n.sceneFinale(),
+          n.logoAccenture(),
           n.addBinders()
         }, 7e3),
         isMobile && setTimeout(function() {
@@ -5535,6 +5535,9 @@ function() {
       },
       sceneFour: function() {
         $(".radar").addClass("scene-four")
+      },
+      logoAccenture: function() {
+        $(".logoaccenture").addClass("logoaccenture2")
       },
       sceneFinale: function() {
         $(".radar").addClass("scene-finale"),

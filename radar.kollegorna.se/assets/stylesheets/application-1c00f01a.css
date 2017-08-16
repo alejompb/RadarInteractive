@@ -1576,6 +1576,18 @@ body.detail .footer {
   animation-delay: 0.1s
 }
 
+ .logoaccenture {
+   visibility: hidden;
+ }
+
+ .logoaccenture2 {
+   visibility: visible;
+
+
+ }
+
+ .logo
+
 .radar__grid .circle--3 {
   width: 25%;
   height: 25%;
