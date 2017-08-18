@@ -1295,7 +1295,7 @@ body {
 
 .header__nav a {
   cursor: pointer;
-  color: #968cbe;
+  color: #ffffff;
   font-weight: 200;
   margin: 0 0 0 20px;
   -webkit-transition: all 0.3s ease;
@@ -1330,7 +1330,7 @@ body {
 }
 
 .header__nav a svg path, .header__nav a svg rect {
-  fill: #968cbe;
+  fill: #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease
 }
@@ -1411,7 +1411,7 @@ body.detail .header {
 .footer__labels ul li {
   margin: 0 12px 0 0;
   display: inline-block;
-  color: #968cbe;
+  color: #ffffff;
   font-family: "Operator SSm A", "Operator SSm B", monospace;
   font-size: 0.66667rem;
   text-transform: uppercase;
@@ -1484,7 +1484,7 @@ body.detail .header {
 .footer__links ul li {
   margin: 0 10px 0 0;
   display: inline-block;
-  color: #4B3F72;
+  color: #4b3f70;
   font-family: "Operator SSm A", "Operator SSm B", monospace;
   font-size: 0.77778rem;
   font-weight: 200;
@@ -1502,8 +1502,8 @@ body.detail .header {
   height: 25px;
   line-height: 23px;
   padding: 0;
-  color: #968cbe;
-  border: 1px solid #968cbe;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   text-align: center
 }
@@ -1515,7 +1515,7 @@ body.detail .header {
 
 .footer__links a {
   cursor: pointer;
-  color: #4B3F72;
+  color: #FFFFFF;
   font-weight: 200;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1813,7 +1813,7 @@ body.detail .footer {
   -webkit-transition: all 4s cubic-bezier(0.77, 0, 0.175, 1);
   transition: all 4s cubic-bezier(0.77, 0, 0.175, 1);
   fill: transparent;
-  stroke: #4B3F72;
+  stroke: #4b3f70;
   stroke-width: 2px;
   stroke-dasharray: 3200;
   stroke-dashoffset: 3200
@@ -1823,12 +1823,12 @@ body.detail .footer {
   position: absolute;
   top: 50%;
   right: 0;
-  color: #4B3F72;
+  color: #ffffff;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   margin: 0;
   font-family: "Operator SSm A", "Operator SSm B", monospace;
-  font-size: 0.55556rem;
+  font-size: 0.56556rem;
   font-weight: 600;
   text-transform: uppercase;
   opacity: 0;
@@ -1875,7 +1875,7 @@ body.detail .footer {
 .radar__chart .horizontal {
   width: 100%;
   height: 1px;
-  background: #4B3F72;
+  background: #4b3f70;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1891,7 +1891,7 @@ body.detail .footer {
 .radar__chart .horizontal2 {
   width: 100%;
   height: 1px;
-  background: #4B3F72;
+  background: #4b3f70;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1907,7 +1907,7 @@ body.detail .footer {
 .radar__chart .horizontal3 {
   width: 100%;
   height: 1px;
-  background: #4B3F72;
+  background: #4b3f70;
   position: absolute;
   top: 50%;
   left: 0;
@@ -1923,7 +1923,7 @@ body.detail .footer {
 .radar__chart .vertical {
   height: 100%;
   width: 1px;
-  background: #4B3F72;
+  background: #4b3f70;
   position: absolute;
   top: 0;
   left: 50%;
@@ -2300,7 +2300,7 @@ body.intro .radar__chart {
   right: 0;
   width: 1px;
   height: 100%;
-  background: rgba(75, 63, 114, 0.25)
+  background: #FFFFFF
 }
 
 .grid .radar__chart section svg {
@@ -2310,7 +2310,7 @@ body.intro .radar__chart {
 
 .grid .radar__chart section svg circle {
   fill: transparent;
-  stroke: #4B3F72;
+  stroke: #ffffff;
   stroke-width: 2px;
   stroke-dasharray: 3200;
   stroke-dashoffset: 3200;
@@ -2325,12 +2325,12 @@ body.intro .radar__chart {
   left: 0;
   width: 100%;
   text-align: center;
-  color: #4B3F72;
+  color: #ffffff;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   margin: 0;
   font-family: "Operator SSm A", "Operator SSm B", monospace;
-  font-size: 0.55556rem;
+  font-size: 0.95556rem;
   font-weight: 600;
   text-transform: uppercase;
   opacity: 0;
@@ -2426,7 +2426,7 @@ body.intro .radar__chart {
   -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
   border-radius: 50%;
-  background: #4B3F72
+  background: #4b3f70
 }
 
 @media (min-width: 768px) {
@@ -2540,11 +2540,11 @@ body.intro .radar__chart {
 }
 
 .blip.muted:after {
-  background: #4B3F72
+  background: #4b3f70
 }
 
 body.detail .blip:after {
-  background: #4B3F72 !important
+  background: #4b3f70 !important
 }
 
 .caption {
@@ -2686,7 +2686,7 @@ body.detail .blip:after {
 }
 
 .caption p.author {
-  color: #4B3F72
+  color: #4b3f70
 }
 
 .caption p.author:before {
@@ -2697,7 +2697,7 @@ body.detail .blip:after {
   height: 18px;
   border-radius: 50%;
   margin-right: 5px;
-  background: #4B3F72
+  background: #4b3f70
 }
 
 .caption.active h4, .caption.active p {
@@ -2856,7 +2856,7 @@ body.detail .caption h4, body.detail .caption p {
 
 .overlay__blip__title a {
   font-family: "Operator SSm A", "Operator SSm B", monospace;
-  color: #968cbe;
+  color: #ffffff;
   font-size: 0.88889rem;
   font-weight: 200;
   -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2918,13 +2918,13 @@ body.detail .caption h4, body.detail .caption p {
   transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
   position: relative;
   background: #0b3b24;
-  border: 1px solid #4B3F72;
+  border: 1px solid #4b3f70;
   border-radius: 12px;
   padding: 20px 30px 25px 30px
 }
 
 .overlay__blip__details .left .description a {
-  color: #968cbe;
+  color: #ffffff;
   -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
@@ -2977,7 +2977,7 @@ body.detail .caption h4, body.detail .caption p {
 }
 
 .overlay__blip__details .left .author__photo {
-  background: #968cbe;
+  background: #ffffff;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -3009,7 +3009,7 @@ body.detail .caption h4, body.detail .caption p {
   font-family: "Operator SSm A", "Operator SSm B", monospace;
   font-size: 0.88889rem;
   font-weight: 200;
-  color: #968cbe;
+  color: #ffffff;
   text-transform: none;
   margin: 0
 }
@@ -3048,7 +3048,7 @@ body.detail .caption h4, body.detail .caption p {
   font-family: "Operator SSm A", "Operator SSm B", monospace;
   font-size: 0.66667rem;
   font-weight: 200;
-  color: #968cbe;
+  color: #ffffff;
   text-transform: uppercase;
   margin: 0 0 5px 0
 }
@@ -3422,7 +3422,7 @@ body.intro .prelude {
   height: 10px;
   top: 0;
   left: 0;
-  background: #4B3F72
+  background: #4b3f70
 }
 
 .tutorial {
@@ -3473,13 +3473,13 @@ body.intro .prelude {
   font-family: "Operator SSm A", "Operator SSm B", monospace;
   font-size: 0.88889rem;
   font-weight: 200;
-  color: #968cbe
+  color: #ffffff
 }
 
 .tutorial p a {
   display: table;
   margin: 10px auto 0 auto;
-  color: #968cbe;
+  color: #ffffff;
   position: relative;
   cursor: pointer
 }
@@ -3492,7 +3492,7 @@ body.intro .prelude {
   bottom: -2px;
   width: 100%;
   height: 1px;
-  background: #968cbe;
+  background: #ffffff;
   -webkit-transition: width 1s cubic-bezier(0.77, 0, 0.175, 1);
   transition: width 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition-delay: 3s;
