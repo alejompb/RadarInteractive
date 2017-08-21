@@ -5560,20 +5560,24 @@ function() {
             $(this).addClass($(this).attr("data-status"));
             var a = $(this).attr("data-quadrant");
             "adserver" === a
-              ? i = 45 * i
+              ? i = 36 * i
               : "platform" === a
-                ? i = 45 + 45 * i
+                ? i = 36 + 36 * i
                 : "technique" === a
-                  ? i = 90 + 45 * i
+                  ? i = 72 + 36 * i
                     : "tool" === a
-                      ? i = 135 + 45 * i
-                        : "datav" === a
-                          ? i = 180 + 45 * i
-                            : "seo" === a
-                              ? i = 225 + 45 * i
+                      ? i = 108 + 36 * i
+                        : "analytics" === a
+                          ? i = 144 + 36 * i
+                            : "datav" === a
+                              ? i = 180 + 36 * i
                                 : "viewability" === a
-                                  ? i = 270 + 45 * i
-                                    : "email" === a && (i = 315 + 45 * i),
+                                  ? i = 216 + 36 * i
+                                    : "seo" === a
+                                      ? i = 252 + 36 * i
+                                        : "sem" === a
+                                          ? i = 290 + 36 * i
+                                            : "email" === a && (i = 324 + 36 * i),
             i = i * Math.PI / 180;
             var u = n + r * Math.cos(i),
               l = n + r * Math.sin(i);
@@ -5614,21 +5618,25 @@ function() {
               $(this).addClass($(this).attr("data-ring")),
               $(this).addClass($(this).attr("data-status"));
               var t = $(this).attr("data-quadrant");
-              "adserver" === t
-                ? i = 45 * i
-                : "platform" === t
-                  ? i = 45 + 45 * i
-                    : "technique" === a
-                      ? i = 90 + 45 * i
+              "adserver" === a
+              ? i = 36 * i
+               : "platform" === a
+                  ? i = 36 + 36 * i
+                   : "technique" === a
+                      ? i = 72 + 36 * i
                         : "tool" === a
-                          ? i = 135 + 45 * i
-                            : "datav" === a
-                              ? i = 180 + 45 * i
-                                : "seo" === a
-                                  ? i = 225 + 45 * i
+                          ? i = 108 + 36 * i
+                            : "analytics" === a
+                              ? i = 144 + 36 * i
+                                : "datav" === a
+                                  ? i = 180 + 36 * i
                                     : "viewability" === a
-                                      ? i = 270 + 45 * i
-                                       : "email" === a && (i = 315 + 45 * i),
+                                      ? i = 216 + 36 * i
+                                        : "seo" === a
+                                          ? i = 252 + 36 * i
+                                            : "sem" === a
+                                              ? i = 290 + 36 * i
+                                                : "email" === a && (i = 324 + 36 * i),
               i = i * Math.PI / 180,
               e % c == 0
                 ? (f = d, p += s)
@@ -5783,6 +5791,12 @@ function() {
             break;
           case "email":
             $(".overlay .quadrant").html("email");
+            break;
+            case "sem":
+            $(".overlay .quadrant").html("SEM");
+            break;
+            case "analytics":
+            $(".overlay .quadrant").html("Analytics");
             break;
           default:
             $(".overlay .quadrant").html("")
