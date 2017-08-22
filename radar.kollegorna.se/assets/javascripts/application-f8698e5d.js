@@ -5575,7 +5575,7 @@ function() {
                                   ? i = 216 + 36 * i
                                     : "seo" === a
                                       ? i = 252 + 36 * i
-                                        : "sem" === a
+                                        : "webdesign" === a
                                           ? i = 290 + 36 * i
                                             : "email" === a && (i = 324 + 36 * i),
             i = i * Math.PI / 180;
@@ -5634,7 +5634,7 @@ function() {
                                       ? i = 216 + 36 * i
                                         : "seo" === a
                                           ? i = 252 + 36 * i
-                                            : "sem" === a
+                                            : "webdesign" === a
                                               ? i = 290 + 36 * i
                                                 : "email" === a && (i = 324 + 36 * i),
               i = i * Math.PI / 180,
@@ -5663,6 +5663,7 @@ function() {
         $(".blip").mouseover(function() {
           n.blipHover($(this))
         }).mouseout(function() {
+                    $(".logoaccenture").removeClass("logoaccenture3");
           $(".blip").removeClass("muted"),
           $(".caption").removeClass("active")
         }),
@@ -5724,6 +5725,7 @@ function() {
         })
       },
       blipHover: function(e) {
+        $(".logoaccenture").addClass("logoaccenture3");
         $(".blip").not(e).addClass("muted");
         var t = e.attr("data-title"),
           n = e.attr("data-quadrant"),
@@ -5792,8 +5794,8 @@ function() {
           case "email":
             $(".overlay .quadrant").html("email");
             break;
-            case "sem":
-            $(".overlay .quadrant").html("SEM");
+            case "webdesign":
+            $(".overlay .quadrant").html("Web Design");
             break;
             case "analytics":
             $(".overlay .quadrant").html("Analytics");
@@ -5802,47 +5804,43 @@ function() {
             $(".overlay .quadrant").html("")
         }
         switch (r) {
-          case "henrik":
-            $(".author__name h3").html("Henrik Sj\xf6kvist"),
-            $(".author__name h4").html("Developer + Partner, Sweden");
+          case "dataxu":
+            $(".author__name h3").html("Dataxu"),
+            $(".author__name h4").html("Dataxu");
             break;
-          case "per":
-            $(".author__name h3").html("Per Sandstr\xf6m"),
-            $(".author__name h4").html("Designer + Partner, Sweden");
+          case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
+            break;         
+            case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
+            break;          
+            case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
+            break;          
+            case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
+            break;          
+            case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
+            break;          
+            case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
             break;
-          case "eduardo":
-            $(".author__name h3").html("Eduardo Nunes"),
-            $(".author__name h4").html("Designer + Partner, Portugal");
-            break;
-          case "filippos":
-            $(".author__name h3").html("Filippos Vasilakis"),
-            $(".author__name h4").html("Developer, Sweden");
-            break;
-          case "ivan":
-            $(".author__name h3").html("Ivan Novosad"),
-            $(".author__name h4").html("Developer, Slovakia");
-            break;
-          case "filippos":
-            $(".author__name h3").html("Dennis Carlsson"),
-            $(".author__name h4").html("Developer, Sweden");
-            break;
-          case "nikolay":
-            $(".author__name h3").html("Nikolay Lechev"),
-            $(".author__name h4").html("Designer, Bulgaria");
-            break;
-          case "osvaldas":
-            $(".author__name h3").html("Osvaldas Valutis"),
-            $(".author__name h4").html("Developer, Lithuania");
-            break;
-          case "raymall":
-            $(".author__name h3").html("Raymall P\xe9rez"),
-            $(".author__name h4").html("Designer, Dominican Republican");
+          case "":
+            $(".author__name h3").html(""),
+            $(".author__name h4").html("");
             break;
           default:
-            $(".author__name h3").html("Kollegorna"),
+            $(".author__name h3").html("Accenture Interactive"),
             $(".author__name h4").html("")
         }
-        $(".author__photo img").attr("src", "/assets/images/team/" + r + ".jpg"),
+        $(".author__photo img").attr("src", "/assets/images/meta/logosdsp/" + r + ".png"),
         $(".overlay .status").attr("class", "").addClass("status " + u),
         "new" === u
           ? $(".overlay .status").html("New or moved")

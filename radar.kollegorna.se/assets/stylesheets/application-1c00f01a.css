@@ -1444,7 +1444,7 @@ body.detail .header {
 .footer__labels ul li.viewability:before {
   background: #7E7E7E
 }
-.footer__labels ul li.sem:before {
+.footer__labels ul li.webdesign:before {
   background: #1E2DF9
 }
 .footer__labels ul li.analytics:before {
@@ -1621,6 +1621,10 @@ body.detail .footer {
    animation: mymove2 5s;
    animation-delay: mymove2 2s;
 
+ }
+
+ .logoaccenture3{
+  visibility: hidden;
  }
 
 
@@ -2568,10 +2572,10 @@ body.intro .radar__chart {
   animation-name: glow-white
 }
 
-.blip.sem:after {
+.blip.webdesign:after {
   background: #1E2DF9
 }
-.blip.sem:hover:after {
+.blip.webdesign:hover:after {
   -webkit-animation-name: glow-white;
   animation-name: glow-white
 }
@@ -2760,11 +2764,11 @@ body.detail .blip:after {
   background: #FFFFFF
 }
 
-.caption p.sem {
+.caption p.webdesign {
   color: #1E2DF9
 }
 
-.caption p.sem:before {
+.caption p.webdesign:before {
   background: #1E2DF9
 }
 .caption p.analytics {
@@ -3253,11 +3257,11 @@ body.detail .caption h4, body.detail .caption p {
 .overlay__blip__details .right p.viewability:before {
   background: #7E7E7E
 }
-.overlay__blip__details .right p.sem {
+.overlay__blip__details .right p.webdesign {
   color: #1E2DF9
 }
 
-.overlay__blip__details .right p.sem:before {
+.overlay__blip__details .right p.webdesign:before {
   background: #1E2DF9
 }
 .overlay__blip__details .right p.analytics {
