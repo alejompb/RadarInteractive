@@ -5840,7 +5840,7 @@ function() {
             $(".author__name h3").html("Accenture Interactive"),
             $(".author__name h4").html("")
         }
-        $(".author__photo img").attr("src", "/assets/images/meta/logosdsp/" + r + ".png"),
+        $(".author__photo img").attr("src", "assets/images/meta/logosdsp/" + t + ".png"),
         $(".overlay .status").attr("class", "").addClass("status " + u),
         "new" === u
           ? $(".overlay .status").html("New or moved")
